@@ -97,7 +97,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+    div h2 p : hover{
+        color: blue;
+    }
 
 
 
