@@ -102,6 +102,10 @@ background-color: #e4d9df;
 margin: 0px;
 }
 
+ul {
+    list-style-type: none;
+}
+/*SPLASH*/
 
 .splash-flex-container {
     display: flex;
@@ -132,7 +136,7 @@ margin: 0px;
 }
 
 #splash-art:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: .75;
 }
 
@@ -150,14 +154,106 @@ margin: 0px;
     color: #f8f8f8;
 }
 
+/*nav*/
 
+.nav-flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    float: left;
+    position: fixed;
+    width: 25%;
+    height: 100%;/*
+    background-color: purple;
+    background-color: rgba(255,255,255,.1);*/
+}
 
+#nav a {
+    text-decoration: none;
+    color: rgba(51, 49, 50, .5);
+    transition: 750ms;
+}
 
+#nav a:hover {
+    color: rgba(51, 49, 50, 1);
+    font-size: 14pt;
+}
 
+#merch {
 
+    color: rgba(51, 49, 50, .1);
 
+}
 
+.nav-list-item {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 12pt;
+    text-align: right;
+    line-height: 2em;
+    letter-spacing: .05em;
+}
 
+/*home*/
+
+#iqn {
+    display: flex;
+    align-items: center;
+    justify-content: center;/*
+    background-color: red;*/
+    height: 100vh;
+    width: 75%;
+    float: right;
+}
+
+/*music*/
+
+#music {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;/*
+    background-color: purple;*/
+    height: 100vh;
+    width: 75%;
+    float: right;/*
+    border-top: 2.5px double #333132;
+    border-bottom: 2.5px double #333132;*/
+
+}
+
+.header {
+    font-family: 'alverata_irregularsemibold';
+    line-height: 5em;
+    font-size: 24pt;
+    color: #333132;
+    float: top;
+}
+
+/*artists*/
+
+#artists {
+    display: flex;
+    align-items: center;
+    justify-content: center;/*
+    background-color: yellow;*/
+    height: 100vh;
+    width: 75%;
+    float: right;
+}
+
+/*about*/
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;/*
+    background-color: green;*/
+    height: 100vh;
+    width: 75%;
+    float: right;
+}
 
 
 /* ==========================================================================
