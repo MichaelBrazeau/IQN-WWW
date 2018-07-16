@@ -120,7 +120,8 @@ ul {
 }
 
 .hide {
-    transform: translateY(-10000px);
+    display: none;
+    transition: 5000ms;
 }
 
 .flex-item {
