@@ -213,22 +213,56 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;/*
-    background-color: purple;*/
+    justify-content: flex-start;
     height: 100vh;
     width: 75%;
-    float: right;/*
-    border-top: 2.5px double #333132;
-    border-bottom: 2.5px double #333132;*/
+    float: right;
+    overflow: none;
+    padding-left: 2em;
+}
 
+.player {
+    display: inline-flex;
+    width: 300px;
+    height: 280px;
+    padding-top: 1em;
+}
+
+#spotify {
+    padding-right: 2em;
+}
+
+#apple {
+   padding-right: 2em;
+}
+
+#soundcloud {
+
+}
+
+#bandcamp {
+    padding-top: 2em;
 }
 
 .header {
     font-family: 'alverata_irregularsemibold';
-    line-height: 5em;
+    line-height: 1em;
     font-size: 24pt;
-    color: #333132;
-    float: top;
+    color: #f8f8f8;
+}
+
+.subheader {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1em;
+    font-size: 12pt;
+    letter-spacing: 1pt;
+    color: rgba(248, 248, 248, .75);
+}
+
+hr {
+    border-color: #f8f8f8;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 /*artists*/
