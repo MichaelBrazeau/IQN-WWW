@@ -269,14 +269,38 @@ hr {
 
 #artists {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;/*
-    background-color: yellow;*/
+    justify-content: flex-start;
     height: 100vh;
     width: 75%;
     float: right;
+    overflow: none;
+    padding-left: 2em;
 }
 
+
+.artist {
+}
+
+#areight {
+display: inline-flex;
+width:450px;
+}
+
+#ignoble {
+display: inline-flex;
+width: 450px
+}
+
+.name {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1pt;
+    color:#333132;
+    padding-bottom: 1em;
+    font-size: 18pt;
+}
 /*about*/
 
 #about {
