@@ -47,8 +47,8 @@
           <li class="nav-list-item"><a href="#iqn"> iqn </a></li>
           <li class="nav-list-item"><a href="#music"> music </a></li>
           <li class="nav-list-item"><a href="#artists"> artists </a></li>
-          <li class="nav-list-item"><a href="#about"> about </a></li>
-          <li class="nav-list-item"><span id="merch"> merch </span></li>
+          <li class="nav-list-item"><a href="#about"> <span class="inactive"> about </span></a></li>
+          <li class="nav-list-item"><a href="#merch"> <span class="inactive"> merch </span></a></li>
 
         </ul>
 
@@ -57,18 +57,25 @@
 
       <div id="iqn"> <a name="iqn">
 
-        IQNIC HOME
+        <img src="img/prof.png" id="imghome"></img>
 
       </a>
       </div>
 
-
+      
       <div id="music"> <a name="music">
+        <div class="flex_row" id="heading">
+        <span class="header">BENDER EP</span>
 
-        <span class="header">BENDER EP</span><br>
+        <br>
+
         <span class="subheader"> available everywhere </span>
 
         <hr>
+
+        </div>
+
+        <div class="flex_row" id="players">
 
         <div class="player" id="spotify">
         <iframe src="https://open.spotify.com/embed/album/2uPsLhFKhmKwz7pbOAu7MF" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -81,11 +88,16 @@
         <div class="player" id="soundcloud">
         <iframe scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/543329943&color=%23333132&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
         </div>
+        </div>
 
         <br>
 
+        <div class="flex_row" id="players_bandcamp">
         <div id="bandcamp">
         <iframe style="border: 0; width: 700px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3320490921/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://iqnic.bandcamp.com/album/bender">bender by iqn</a></iframe>
+        </div>
+        </div>
+
         </div>
 
       </a>
@@ -110,13 +122,37 @@
       </a>
       </div>
 
-
+      
       <div id="about"> <a name="about">
 
-        ABOUT
+        <p class="inactive_text">
+        <span class="inactive_header">ABOUT</span>
+        <hr>
+        <span class="inactive_subheader">coming soon</span>
+        </p>
+
       </a>
       </div>
 
+      <div id="merch"> <a name="merch">
+
+        <p class="inactive_text">
+        <span class="inactive_header">MERCH</span>
+        <hr>
+        <span class="inactive_subheader">coming soon</span>
+        </p>
+
+      </a>
+      </div>
+
+      
+        <div id="tickerwrap">
+          <div id="ticker">
+              gatherers divulge way blanks sown maundered placeholder gatherers divulge way blanks sown maundered placeholder gatherers divulge way blanks sown maundered placeholder gatherers divulge way blanks sown maundered placeholder gatherers divulge way blanks sown maundered placeholder 
+          </div>
+
+
+        </div>
 
     </div>
 

@@ -181,7 +181,7 @@ ul {
     font-size: 14pt;
 }
 
-#merch {
+.inactive {
 
     color: rgba(51, 49, 50, .1);
 
@@ -206,6 +206,17 @@ ul {
     height: 100vh;
     width: 75%;
     float: right;
+}
+
+#imghome {
+    width: 250px;
+    height: 250px;
+    opacity: .95;
+    transition: 1000ms;
+}
+
+#imghome:hover {
+    opacity: .2
 }
 
 /*music*/
@@ -247,23 +258,41 @@ ul {
 
 .header {
     font-family: 'alverata_irregularsemibold';
-    line-height: 1em;
+    line-height: 6pt;
     font-size: 24pt;
-    color: #f8f8f8;
+    color: #333132;
 }
 
 .subheader {
     font-family: 'Open Sans', sans-serif;
-    line-height: 1em;
+    line-height: 12pt;
     font-size: 12pt;
-    letter-spacing: 1pt;
-    color: rgba(248, 248, 248, .75);
+    letter-spacing: .5pt;
+    color: #333132;
 }
 
 hr {
     border-color: #f8f8f8;
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+.flex_row {
+width:75%;
+display: inline-flex;
+}
+
+#heading {
+    width: 75%;
+    flex-direction: column;
+}
+
+#players {
+    width: 75%;
+}
+
+#players_bandcamp {
+    width: 75%;
 }
 
 /*artists*/
@@ -302,6 +331,7 @@ width: 450px
     padding-bottom: 1em;
     font-size: 18pt;
 }
+
 /*about*/
 
 #about {
@@ -313,6 +343,87 @@ width: 450px
     width: 75%;
     float: right;
 }
+
+/*merch*/
+
+#merch {
+    display: flex;
+    align-items: center;
+    justify-content: center;/*
+    background-color: green;*/
+    height: 100vh;
+    width: 75%;
+    float: right;
+}
+
+/*inactive*/
+
+.inactive_text {
+    text-align: center;
+}
+
+.inactive_header {
+    font-family: 'alverata_irregularsemibold';
+    line-height: 1em;
+    font-size: 24pt;
+    color: #f8f8f8;
+}
+
+.inactive_subheader {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1em;
+    font-size: 12pt;
+    letter-spacing: 1pt;
+    color: #f8f8f8;
+}
+
+/*ticker*/
+/* Specifying the name for animation keyframes and keyframes themselves */
+
+@keyframes customticker {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+
+/* Formatting the full-width ticker wrapper background and font color */
+#tickerwrap {
+  width: 100%;
+  overflow: hidden;
+  background-color: #333132;
+  color: #f8f8f8;
+  z-index: 1000;
+  position: fixed;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1em;
+  font-size: 8pt;
+  letter-spacing: 1pt;
+  padding:.5em;
+}
+
+
+/* Formatting the ticker content background, font color, padding and exit state */
+#ticker {
+  display: inline-block;
+  white-space: nowrap;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: customticker;
+  animation-name: customticker;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+}
+
+
 
 
 /* ==========================================================================
