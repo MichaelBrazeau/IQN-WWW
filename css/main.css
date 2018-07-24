@@ -98,7 +98,7 @@ width: 100%;
 }
 
 body {
-background-color: #e4d9df;
+background-color: #f8f8f8;
 margin: 0px;
 }
 
@@ -114,14 +114,15 @@ ul {
     align-content: center;
     padding: 0;
     margin: 0;
-    background-color: #333132;
+    background-color: #e4d9df;
     height: 100vh;
-    transition: 5000ms;
+    transition: 1500ms;
 }
 
 .hide {
-    display: none;
-    transition: 5000ms;
+    opacity: 0;
+    visibility: hidden;
+    height:0vh;
 }
 
 .flex-item {
@@ -144,15 +145,16 @@ ul {
 #splash-header {
     font-family: 'alverata_irregularsemibold';
     font-size: 4vw;
-    letter-spacing: .2em;
+    letter-spacing: .1em;
     color: #f8f8f8;
 }
 
 #splash-body {
     font-family: 'alverata_irregularlight';
     font-size:  .5em;
-    letter-spacing: .2em;
+    letter-spacing: .1em;
     color: #f8f8f8;
+    text-align: left;
 }
 
 /*nav*/
@@ -260,7 +262,7 @@ ul {
     font-family: 'alverata_irregularsemibold';
     line-height: 6pt;
     font-size: 24pt;
-    color: #333132;
+    color: #e4d9df;
 }
 
 .subheader {
@@ -268,11 +270,11 @@ ul {
     line-height: 12pt;
     font-size: 12pt;
     letter-spacing: .5pt;
-    color: #333132;
+    color: #e4d9df;
 }
 
 hr {
-    border-color: #f8f8f8;
+    border-color: #e4d9df;
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -327,7 +329,7 @@ width: 450px
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     letter-spacing: 1pt;
-    color:#333132;
+    color:#e4d9df;
     padding-bottom: 1em;
     font-size: 18pt;
 }
@@ -366,7 +368,7 @@ width: 450px
     font-family: 'alverata_irregularsemibold';
     line-height: 1em;
     font-size: 24pt;
-    color: #f8f8f8;
+    color: #e4d9df;
 }
 
 .inactive_subheader {
@@ -374,7 +376,7 @@ width: 450px
     line-height: 1em;
     font-size: 12pt;
     letter-spacing: 1pt;
-    color: #f8f8f8;
+    color: #e4d9df;
 }
 
 /*ticker*/
@@ -397,7 +399,7 @@ width: 450px
 #tickerwrap {
   width: 100%;
   overflow: hidden;
-  background-color: #333132;
+  background-color: #e4d9df;
   color: #f8f8f8;
   z-index: 1000;
   position: fixed;
